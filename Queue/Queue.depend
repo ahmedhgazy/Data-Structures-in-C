@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1730419433 source:i:\angular\ds&&algo\queue\main.c
+	<stdio.h>
+	"queue.h"
+	"queue.c"
+	<stdlib.h>
+
+1730419360 i:\angular\ds&&algo\queue\queue.h
+
+1730419374 i:\angular\ds&&algo\queue\queue.c
+	"queue.h"
+

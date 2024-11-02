@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1730042597 source:i:\angular\ds&&algo\stack\main.c
+	<stdio.h>
+	"stack.h"
+	"stack.c"
+	<stdlib.h>
+	<string.h>
+
+1730042053 i:\angular\ds&&algo\stack\stack.h
+
+1730042698 i:\angular\ds&&algo\stack\stack.c
+	"stack.h"
+
