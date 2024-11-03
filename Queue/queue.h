@@ -23,4 +23,7 @@ type Dequeue(Queue *q);
 // Problems in the following functions
 
 void traverse(Queue *q, void (*fun)(type *));
+
+type QueueFirstElement(Queue *q);
+
 #endif // QUEUE_H_INCLUDED

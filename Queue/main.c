@@ -10,6 +10,21 @@ void print(type *item)
     printf("%d\n", *item);
 }
 
+Queue mergedSectionGroup(Queue *sectionQ, Queue *groupQ)
+{
+    Queue mergedQ;
+    createQueueQueue(&mergedQ);
+    while (!ISQueueEmpty(*sectionQ) && !ISQueueEmpty(*groupQ))
+    {
+        int sectionItem = Dequeue(sectionQ);
+        int groupItem = Dequeue(groupQ);
+        int mergedItem = (sectionItem * 10) + groupItem;
+        Enqueue(mergedItem, &mergedQ);
+    }
+
+    return mergedQ;
+}
+
 int main()
 {
     Queue q;
