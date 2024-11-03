@@ -18,9 +18,7 @@ type ISQueueEmpty(Queue q)
 void Enqueue(type item, Queue *q)
 {
     if (ISQueueFull(*q))
-    {
         printf("Queue overflow");
-    }
     else
     {
         q->rear = (q->rear + 1) % MAX;
@@ -33,9 +31,7 @@ type Dequeue(Queue *q)
 {
     int item;
     if (ISQueueEmpty(*q))
-    {
         printf("Queue Underflow");
-    }
     else
     {
         item = q->items[q->front];
@@ -43,4 +39,17 @@ type Dequeue(Queue *q)
         q->size--;
     }
     return item;
+}
+
+// Problems in the following functions
+
+void traverse(Queue *q, void (*fun)(type *))
+{
+    int i, count;
+
+    for (i = q->front, count = 0; count < q->size; count++)
+    {
+        (*fun)(&q->items[i]);
+        i = (i + 1) % MAX;
+    }
 }

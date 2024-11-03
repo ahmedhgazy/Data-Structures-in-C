@@ -28,30 +28,19 @@ int main()
     ////    }
 
     if (!isStackFull(s))
-    {
-
         push(1, &s);
-    }
-    if (!isStackFull(s))
-    {
 
+    if (!isStackFull(s))
         push(2, &s);
-    }
-    if (!isStackFull(s))
-    {
 
+    if (!isStackFull(s))
         push(3, &s);
-    }
-    if (!isStackFull(s))
-    {
 
+    if (!isStackFull(s))
         push(4, &s);
-    }
-    if (!isStackFull(s))
-    {
 
+    if (!isStackFull(s))
         push(5, &s);
-    }
 
     printf("\t\t The Top pointer of stack points to the top element and the value is: %d\t\t\n", peak(s));
     pop(&s);
